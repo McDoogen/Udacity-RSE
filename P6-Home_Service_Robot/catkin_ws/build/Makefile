@@ -298,6 +298,19 @@ _catkin_empty_exported_target/fast:
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
+# Target rules for targets named add_markers_test
+
+# Build rule for target.
+add_markers_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_markers_test
+.PHONY : add_markers_test
+
+# fast build rule for target.
+add_markers_test/fast:
+	$(MAKE) -f add_markers/CMakeFiles/add_markers_test.dir/build.make add_markers/CMakeFiles/add_markers_test.dir/build
+.PHONY : add_markers_test/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
 
 # Build rule for target.
@@ -1815,6 +1828,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... gtest"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... add_markers_test"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"

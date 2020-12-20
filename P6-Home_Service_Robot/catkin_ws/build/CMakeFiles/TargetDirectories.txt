@@ -113,12 +113,13 @@
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/turtlebot_simulator/turtlebot_stdr/CMakeFiles/rebuild_cache.dir
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/turtlebot_simulator/turtlebot_stdr/CMakeFiles/list_install_components.dir
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/turtlebot_simulator/turtlebot_stdr/CMakeFiles/install.dir
-/home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/install/strip.dir
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/install/local.dir
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/install.dir
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/rebuild_cache.dir
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/edit_cache.dir
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/test.dir
+/home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/install/strip.dir
+/home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/add_markers_test.dir
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/geometry_msgs_generate_messages_py.dir
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build/add_markers/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir

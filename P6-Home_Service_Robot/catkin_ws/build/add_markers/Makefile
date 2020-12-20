@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/b
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -125,6 +113,18 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -166,6 +166,21 @@ preinstall/fast:
 depend:
 	cd /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+add_markers/CMakeFiles/add_markers_test.dir/rule:
+	cd /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 add_markers/CMakeFiles/add_markers_test.dir/rule
+.PHONY : add_markers/CMakeFiles/add_markers_test.dir/rule
+
+# Convenience name for target.
+add_markers_test: add_markers/CMakeFiles/add_markers_test.dir/rule
+
+.PHONY : add_markers_test
+
+# fast build rule for target.
+add_markers_test/fast:
+	cd /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build && $(MAKE) -f add_markers/CMakeFiles/add_markers_test.dir/build.make add_markers/CMakeFiles/add_markers_test.dir/build
+.PHONY : add_markers_test/fast
 
 # Convenience name for target.
 add_markers/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
@@ -584,18 +599,46 @@ src/add_markers.cpp.s:
 	cd /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build && $(MAKE) -f add_markers/CMakeFiles/add_markers.dir/build.make add_markers/CMakeFiles/add_markers.dir/src/add_markers.cpp.s
 .PHONY : src/add_markers.cpp.s
 
+src/add_markers_test.o: src/add_markers_test.cpp.o
+
+.PHONY : src/add_markers_test.o
+
+# target to build an object file
+src/add_markers_test.cpp.o:
+	cd /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build && $(MAKE) -f add_markers/CMakeFiles/add_markers_test.dir/build.make add_markers/CMakeFiles/add_markers_test.dir/src/add_markers_test.cpp.o
+.PHONY : src/add_markers_test.cpp.o
+
+src/add_markers_test.i: src/add_markers_test.cpp.i
+
+.PHONY : src/add_markers_test.i
+
+# target to preprocess a source file
+src/add_markers_test.cpp.i:
+	cd /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build && $(MAKE) -f add_markers/CMakeFiles/add_markers_test.dir/build.make add_markers/CMakeFiles/add_markers_test.dir/src/add_markers_test.cpp.i
+.PHONY : src/add_markers_test.cpp.i
+
+src/add_markers_test.s: src/add_markers_test.cpp.s
+
+.PHONY : src/add_markers_test.s
+
+# target to generate assembly for a file
+src/add_markers_test.cpp.s:
+	cd /home/workspace/Udacity-RSE/P6-Home_Service_Robot/catkin_ws/build && $(MAKE) -f add_markers/CMakeFiles/add_markers_test.dir/build.make add_markers/CMakeFiles/add_markers_test.dir/src/add_markers_test.cpp.s
+.PHONY : src/add_markers_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... install/strip"
+	@echo "... add_markers_test"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -626,6 +669,9 @@ help:
 	@echo "... src/add_markers.o"
 	@echo "... src/add_markers.i"
 	@echo "... src/add_markers.s"
+	@echo "... src/add_markers_test.o"
+	@echo "... src/add_markers_test.i"
+	@echo "... src/add_markers_test.s"
 .PHONY : help
 
 
